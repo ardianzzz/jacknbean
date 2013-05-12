@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Jackpot &amp; Binbon – We're getting married!</title>
+	<meta name="description" content="Jakcpot &amp; Binbon – We're getting married!">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/stylesheets/app.css">
+	<link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css">
+	<link href="img/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=284025788369281";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div class="wrapper">
+		<div class="container">
+			<img src="img/fleuron.png" alt="" class="fleur">
+			<div class="site-header" role="banner">
+				<h1>Ikhwan <span class="amp">&amp;</span> Ratri</h1>
+			</div>
+			<div class="tag">
+				We're getting married!
+			</div>
+			<img src="img/fleuron2.png" alt="" class="fleur">
+			<div class="content">
+				<div class="section">
+					<h3>Date &amp; Time</h3>
+					<p>
+					Saturday, June 8th 2013 
+					<br>11.00 – 14.00 WIB
+					</p> 
+				</div>
+				<div class="section">
+					<h3>Place &amp; Map</h3>
+						<p>
+						Gedung Geologi, Jl Diponegoro 57 <br>Bandung, Jawa Barat
+					</p>
+				</div>
+			</div>
+			<div class="map">
+				<a href="https://maps.google.com/maps?q=museum+geologi+bandung&hl=en&ll=-6.898138,107.62104&spn=0.047717,0.076561&sll=37.0625,-95.677068&sspn=38.911557,78.310547&t=h&hq=museum+geologi&hnear=Bandung,+West+Java,+Indonesia&z=14&iwloc=A">
+				<small>Klik untuk melihat peta</small>
+				<img src="http://maps.googleapis.com/maps/api/staticmap?center=-6.90068,107.621&zoom=15&size=400x150&markers=color:blue%7Clabel:★%7C-6.90068,107.621&sensor=false">
+				<div class="overlay"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="countdown">
+		<div id="defaultCountdown"></div>
+	</div>
+	<div class="footer">
+		<div class="social">
+		    <div class="btn">
+		        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="id">Tweet</a>
+		    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		    </div>
+		    <div class="btn">
+		        <div class="fb-like" data-href="http://jackpotbinbon.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+		    </div>
+		</div>
+
+		<div class="small">
+		    2013 &copy; Jack 'n Bean <a href="http://twitter.com/ardianzzz">★</a>
+		</div>
+	</div>
+	<div class="photo"> 
+		<div class="overlay"></div>          
+	</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+    <script src="js/countdown.js"></script>
+    <script type="text/javascript">
+	    $(document).ready(function() {
+	        var date = new Date(2013, 5, 8, 11);
+	        $('#defaultCountdown').countdown({
+	            until: date,
+	            format: 'dHMS'
+	        });
+	        var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg', 'bg5.jpg', 'bg6.jpg', 'bg7.jpg'];
+	        $('body').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	    });
+    </script>
+    </body>
+</html>
+
+

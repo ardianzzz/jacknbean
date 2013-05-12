@@ -85,8 +85,6 @@ img {
 .wrapper {
 	
 	width: 400px;
-	
-	background: #fff url(../img/bg-site.png);
 	color: #484848;
 	padding: 20px;
 	//-webkit-font-smoothing: antialiased;
@@ -94,15 +92,42 @@ img {
 	max-width: 100%;
 	position: absolute;
 	top:0;
-	bottom:0;
 	left: 0;
+	z-index: 10;
+
+
+	
+}
+
+.wrapperbg {
+		position: fixed;
+		top:0;
+		left:0;
+		bottom: 0;
+		background: #fff url(../img/bg-site.png);
+		width: 400px;
+	}
+
+
+.comments {
+	margin:20px 0;
+}
+
+
+.fb-comments {
+	width: 100% !important;
+}
+.fb-comments >span {
+	width: 100% !important;
+}
+
+.fb-comments >span iframe {
+	width: 100% !important;
+	display: block;
 }
 
 .map {
-	position: absolute;
-	bottom:0;
-	right:0;
-	left:0;
+	position: relative;
 
 
 	small {
@@ -167,7 +192,6 @@ img {
 .content {
 
 	text-align: center;
-	width: 240px;
 	margin:20px auto;
 
 	.section {
@@ -188,7 +212,7 @@ img {
 
 .countdown {
 	padding: 20px 0;
-	position: absolute;
+	position: fixed;
 	top:0;
 	right:20px;
 }
@@ -236,7 +260,7 @@ line-height: 1;
 .footer {
 
 	overflow: hidden;
-	position: absolute;
+	position: fixed;
 	right: 20px;
 	left:420px;
 	bottom: 10px;
@@ -375,6 +399,7 @@ img {
 		border-radius:0;
 		height: auto;
 		padding-bottom:20px;
+
 
 		.small,.social {
 			text-align: left;
